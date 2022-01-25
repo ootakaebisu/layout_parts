@@ -1,5 +1,74 @@
 @charset "UTF-8";
 
+/* 共通 */
+.q4_blue {
+  text-align: center;
+}
+
+/* 1 */
+.q4-text-align > p {
+  display: inline-block; /* インライン要素に変換 */
+}
+
+.q4-text-align {
+  text-align: center;
+}
+
+.q4_margin {
+  margin: 0 auto;
+}
+
+/* 2 */
+.q4_table {
+  display: table;
+  height: 100%;
+}
+/* display:inline-block; */
+
+.q4_table_cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.q4_table_cell>p {
+  display:inline-block;
+} 
+
+
+.q4_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 3 */
+.q4_fixed {
+  position: relative;
+}
+
+.q4_fixed_content {
+  position: absolute;
+  top: 0; /* auto以外に設定すればOK */
+  right: 0; /* auto以外に設定すればOK */
+  bottom: 0; /* auto以外に設定すればOK */
+  left: 0; /* auto以外に設定すればOK */
+  margin: auto;
+}
+
+.q4_transform {
+  position: relative;
+}
+
+.q4_transform_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+/* 追記：①中央寄せする要素の左上を起点として上から50%（top: 50%;）・左から50%（left: 50%;）の位置に移動②要素の大きさの半分ずつを戻す（translate）、という動きの流れ。 */
+
 
 /* q4が終わったら
 q5のcssはq5フォルダの中のcssファイルに記述してください */

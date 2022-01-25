@@ -1,5 +1,38 @@
 @charset "UTF-8";
 
+table.q2_table {
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  border: solid #dedede;
+  border-collapse: collapse;
+  border: 0;
+}
+
+table.q2_table th {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ecf1f2;
+  background-color: #2244aa;
+  border: 1px solid #ecf1f2;
+}
+
+table.q2_table td {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  border: 1px solid #ecf1f2;
+}
+
+table.q2_table tbody tr:last-child td,
+table.q2_table tbody tr:last-child th {
+  border-top: 2px dashed #000;
+}
+
+table.q2_table tr:nth-child(2n) {
+  background-color: #dedede;
+}
 
 /* q2が終わったら
 q3のcssはq3フォルダの中のcssファイルに記述してください */
