@@ -15,14 +15,14 @@ table.q2_table th {
   line-height: 26px;
   color: #ecf1f2;
   background-color: #2244aa;
-  border: 1px solid #ecf1f2;
+  border: 1px solid #dedede;
 }
 
 table.q2_table td {
   padding: 10px;
   font-size: 16px;
   line-height: 22px;
-  border: 1px solid #ecf1f2;
+  border: 1px solid #dedede;
 }
 
 table.q2_table tbody tr:last-child td,
@@ -31,7 +31,7 @@ table.q2_table tbody tr:last-child th {
 }
 
 table.q2_table tr:nth-child(2n) {
-  background-color: #dedede;
+  background-color: #ecf1f2;
 }
 
 /* q2が終わったら

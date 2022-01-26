@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* 残り：トップスクロールボタン */
-
 .q3_container {
   position: relative;
 }
@@ -100,13 +98,6 @@
 
 .q3_fixed {
   margin: 0 0 0 auto;
-  border-radius: 50%;
-  background-color: blue !important;
-}
-
-.q3_fixed:before {
-  border-color: white !important;
-  border-width: 3px !important;
 }
 
 /* q3が終わったら

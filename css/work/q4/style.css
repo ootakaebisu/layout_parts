@@ -65,7 +65,7 @@
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  -webkit- transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
 }
 /* 追記：①中央寄せする要素の左上を起点として上から50%（top: 50%;）・左から50%（left: 50%;）の位置に移動②要素の大きさの半分ずつを戻す（translate）、という動きの流れ。 */
 
