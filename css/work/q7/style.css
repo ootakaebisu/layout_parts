@@ -1,1 +1,51 @@
 @charset "UTF-8";
+
+.q7_content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+.q7_icon {
+  padding-right: 35px;
+  height: 100%;
+}
+
+/* 吹き出し */
+.ballon {
+  position: relative;
+  width: 550px;
+  padding: 20px;
+  font-size: 16px;
+  border: 5px solid #222;
+  border-radius: 30px;
+}
+
+.ballon::before,
+.ballon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  /* 三角形作り共通部分 */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.ballon::before {
+  /* 三角の色(枠線) */
+  border-right: 20px solid #222;
+  /* 三角の配置 */
+  left: -20px;
+  top: 80px;
+}
+
+.ballon::after {
+  /* 三角の色(塗りつぶし) */
+  border-right: 20px solid #fff;
+  /* 三角の配置 */
+  left: -13px;
+  top: 80px;
+}

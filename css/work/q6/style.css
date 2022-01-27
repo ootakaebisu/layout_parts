@@ -1,5 +1,72 @@
 @charset "UTF-8";
 
+/* ベースとなる画像の実装 */
+.q6_flex {
+  display: flex;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.q6_img_box {
+  width: 300px;
+  overflow: hidden;
+  position: relative; /* テキストの親要素 */
+}
+
+.q6_img_box:first-child {
+  margin-right: 50px;
+}
+
+.q6_img_box img {
+  width: 300px;
+  transition: transform 0.5s;
+}
+
+/* 左 */
+.q6_img_big:hover {
+  transform: scale(1.5);
+}
+
+/* 右 */
+.q6_text {
+  color: #fff;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transform: translateY(100%);
+}
+
+.q6_img_text:hover + .q6_text {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+/* 6-2 */
+.q6_scroll_box {
+  width: 960px;
+  margin: 80px auto;
+  overflow: hidden;
+}
+
+@keyframes q6_animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.q6_scroll {
+  width: 960px;
+  font-size: 200px;
+  animation-name: q6_animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
 
 /* q6が終わったら
 q7のcssはq7フォルダの中のcssファイルに記述してください */

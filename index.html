@@ -39,6 +39,11 @@
       <section>
         <div class="inner">
           <!-- 回答はここに書いてね -->
+          <div class="q6_scroll_box">
+            <div class="q6_scroll">
+              6-2 scroll<br />animation
+            </div>
+          </div>
         </div>
       </section>
       <!-- q１ -->
@@ -245,7 +250,7 @@
               <h3 class="q5_inner_title">ー 5-1 floatでの横並び ー</h3>
               <!-- 新たにタグは追加しなくてもできます。 -->
               <!-- 回答はこの中に書いてね↓ -->
-              <div class="q5_inner_contents">
+              <div class="q5_inner_contents q5_clearfix">
                 <p class="q5_white">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -273,9 +278,9 @@
               <h3 class="q5_inner_title">ー 5-2 tableでの横並び ー</h3>
               <!-- 新たにタグは追加しなくてもできます。 -->
               <!-- 回答はこの中に書いてね↓ -->
-              <div class="q5_inner_contents">
-                <div>
-                  <p class="q5_white">
+              <div class="q5_inner_contents q5_table">
+                <div class="q5_table_cell">
+                  <p class="q5_white q5_table_content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -286,8 +291,8 @@
                     deserunt mollit anim id est laborum.
                   </p>
                 </div>
-                <div>
-                  <p class="q5_white">
+                <div class="q5_table_cell">
+                  <p class="q5_white q5_table_content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -305,8 +310,8 @@
               <h3 class="q5_inner_title">ー 5-3 inline-blockでの横並び ー</h3>
               <!-- 新たにタグは追加しなくてもできます。 -->
               <!-- 回答はこの中に書いてね↓ -->
-              <div class="q5_inner_contents">
-                <p class="q5_white">
+              <div class="q5_inner_contents q5_inline_wrap">
+                <p class="q5_white q5_inline">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -316,7 +321,7 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </p>
-                <p class="q5_white">
+                <p class="q5_white q5_inline">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -333,8 +338,8 @@
               <h3 class="q5_inner_title">ー 5-4 flexでの横並び ー</h3>
               <!-- 新たにタグは追加しなくてもできます。 -->
               <!-- 回答はこの中に書いてね↓ -->
-              <div class="q5_inner_contents">
-                <p class="q5_white">
+              <div class="q5_inner_contents q5_flex">
+                <p class="q5_white q5_flex_content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -344,7 +349,7 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </p>
-                <p class="q5_white">
+                <p class="q5_white q5_flex_content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -361,7 +366,7 @@
               <h3 class="q5_inner_title">ー 5-5 calcでの横並び ー</h3>
               <!-- 新たにタグは追加しなくてもできます。 -->
               <!-- 回答はこの中に書いてね↓ -->
-              <div class="q5_inner_contents">
+              <div class="q5_inner_contents q5_calc">
                 <p class="q5_white_calc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -404,6 +409,28 @@
           <h2 class="layout_main_section_title">6-1.アニメーション</h2>
           <div class="layout_main_section_contents">
             <!-- 回答はここに書いてね -->
+            <div class="q6_flex">
+              <div class="q6_img_box">
+                <img
+                  src="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/img/q9/thumb.jpg"
+                  alt="車の画像"
+                  class="q6_img_big"
+                />
+              </div>
+              <div class="q6_img_box">
+                <img
+                  src="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/assets/img/q9/thumb.jpg"
+                  alt="車の画像"
+                  class="q6_img_text"
+                />
+                <div class="q6_text">
+                  Lorem ipsum dolor sit amet, consectetur adipisifwcing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore roipi
+                  magna aliqua.
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
       </section>
@@ -413,16 +440,19 @@
           <h2 class="layout_main_section_title">7.吹き出し</h2>
           <div class="layout_main_section_contents">
             <!-- 回答はここに書いてね -->
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+            <div class="q7_content">
+              <img src="img/gizumo.png" class="q7_icon">
+              <div class="ballon">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
             </div>
           </div>
         </div>
