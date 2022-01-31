@@ -14,6 +14,10 @@
   position: relative; /* テキストの親要素 */
 }
 
+.q6_img_box:hover {
+  cursor : pointer;
+}
+
 .q6_img_box:first-child {
   margin-right: 50px;
 }
